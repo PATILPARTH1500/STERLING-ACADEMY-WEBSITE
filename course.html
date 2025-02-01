@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Sterling Academy</title>
+  <meta name="title" content="Sterling-Academy">
+  <meta name="description" content="This is a education html template made by Parth Patil">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
+
+  <!-- 
+    - custom font link
+  -->
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+
+  <!--
+  -Internal style
+  -->
+
+ <style>
+     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      background-image:url(/assets/images/hero-bg.png);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color:transparent;
+      z-index: 10;
+      padding: 10px 20px;
+    }
+
+    header img {
+      vertical-align: middle;
+    }
+
+    .main-box {
+      display: flex;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      height: 500px;
+      margin-top: 175px;
+      margin-bottom:100px;
+    }
+
+    .text-section {
+      flex: 0 0 30%;
+      padding: 20px;
+      background-color: #eafafc;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .text-section h2 {
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      color: #333;
+    }
+
+    .text-section p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .video-section {
+      flex: 0 0 70%;
+      background-color: #000;
+      position: relative;
+    }
+
+    .video-section video {
+      width: 100%;
+      height: 100%;
+      border: none;
+    } 
+
+    /* Responsive Design with Media Queries */
+    @media (max-width: 768px) {
+      .main-box {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .text-section {
+        flex: 1 1 auto;
+        padding: 20px;
+      }
+
+      .video-section {
+        flex: 1 1 auto;
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 10px;
+      }
+
+      .text-section h2 {
+        font-size: 1.5rem;
+      }
+
+      .text-section p {
+        font-size: 0.9rem;
+      }
+
+      .video-section {
+        height: 200px;
+      }
+    }
+ </style>
+ 
+</head>
+
+<body>
+
+  <!-- 
+    - PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle" data-circle></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <img src="/assets/images/logo.png" alt="" srcset="" style="height: 40px;">
+      <span style="color:black;font-size:xx-large;font-weight: 750;font-family:Georgia, 'Times New Roman', Times, serif;"><a href="index.html">Sterling Academy</a></span>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <span style="color:black;font-size:xx-large;font-weight: 750;font-family:Georgia, 'Times New Roman', Times, serif;"><a href="index.html">Sterling Academy</a></span>
+
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link title-sm" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about-us.html" class="navbar-link title-sm" data-nav-link>About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="course.html" class="navbar-link title-sm" data-nav-link>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="placement.html" class="navbar-link title-sm" data-nav-link>Placements</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="gallery.html" class="navbar-link title-sm" data-nav-link>Gallery</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="blog.html" class="navbar-link title-sm" data-nav-link>Blog</a>
+          </li>
+          
+
+        </ul>
+
+      </nav>
+
+      <a href="course.html" class="btn btn-secondary">Enroll Now</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+<!--
+  main
+  -->
+  <main class="container">
+    <h2 class="headline-md text-center section-title" style="position:relative;top:140px;">
+      Our Certified Export/Import <span class="span has-after">Course</span>
+   </h2>
+    <div class="main-box">
+      <!-- Text Section -->
+      <div class="text-section">
+        <h2>Sterling Academy Logistics Course Preview</h2>
+        <p>Enhance your knowledge and skillset with our wide range of courses, expert mentors, and hands-on learning opportunities.</p>
+        <p>By exploring and deepening your understanding, you can become a leader in your chosen field. Join us today and step into a brighter future.</p>
+        <div class="rating-wrapper">
+          <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="" style="display: inline-block;">
+          <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="" style="display: inline-block;">
+          <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="" style="display: inline-block;">
+          <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="" style="display: inline-block;">
+          <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="" style="display: inline-block;">
+          <p STYLE="color:rgb(39, 231, 39);font-size: larger;font-weight: 600;display: inline-block;">18,000 INR</p>
+        </div>
+        <p class="title-sm">
+          <img src="./assets/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+          <span class="span">3 Months Certified Course</span>
+        </p>
+
+        <p class="title-sm">
+          <img src="./assets/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+          <span class="span">1k+ Students</span>
+        </p>
+
+        <button class="btn" style="background-color: rgb(255, 211, 116);color:black">View More</button>
+
+      </div>
+  
+      <!-- Video Section -->
+      <div class="video-section">
+        <video src="/assets/images/hero.mp4" autoplay controls loop></video>
+      </div>
+    </div>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+    <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+    <script>
+      var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"WhatsApp Us","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"917400488041","welcomeMessage":"Hello","zIndex":999999,"btnColorScheme":"light"};
+      var wa_widgetSetting = {"title":"Sterling Academy","subTitle":"Shipping  & Logistics Academy","headerBackgroundColor":"#29612c","headerColorScheme":"light","greetingText":"Hi there! \nHow can I help you?","ctaText":"Start Chat","btnColor":"#00fa2a","cornerRadius":40,"welcomeMessage":"Hello","btnColorScheme":"light","brandImage":"","darkHeaderColorScheme":{"title":"#333333","subTitle":"#4F4F4F"}};  
+      window.onload = () => {
+        _waEmbed(wa_btnSetting, wa_widgetSetting);
+      };
+    </script>
+  
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <span style="color:black;font-size:xx-large;font-weight: 750;font-family:Georgia, 'Times New Roman', Times, serif;">Sterling Academy</span>
+
+
+          <p class="title-sm footer-text">
+            By deepening your understanding, you not only enhance your professional capabilities but also position yourself as a valuable asset in a rapidly evolving global industry.          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="http://www.youtube.com/@STERLINGACADEMY-k8m" class="social-link">
+                <img src="./assets/images/youtube.svg" width="40" height="40" loading="lazy" alt="youtube">
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/sterlingacademy_15000/" class="social-link">
+                <img src="./assets/images/instagram.svg" width="40" height="40" loading="lazy" alt="instagram">
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="headline-sm footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Pricing</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Blog</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="headline-sm footer-list-title">Legal</p>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Legal</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Term & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Payment Method</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+
+            <p class="headline-sm footer-list-title">Instagram Post</p>
+
+            <ul class="grid-list">
+
+              <li>
+                <img src="./assets/images/ins-1.png" width="80" height="80" loading="lazy" alt="instagram post"
+                  class="img-cover">
+              </li>
+
+              <li>
+                <img src="./assets/images/ins-2.png" width="80" height="80" loading="lazy" alt="instagram post"
+                  class="img-cover">
+              </li>
+
+              <li>
+                <img src="./assets/images/ins-3.png" width="80" height="80" loading="lazy" alt="instagram post"
+                  class="img-cover">
+              </li>
+
+              <li>
+                <img src="./assets/images/ins-4.png" width="80" height="80" loading="lazy" alt="instagram post"
+                  class="img-cover">
+              </li>
+
+              <li>
+                <img src="./assets/images/ins-5.png" width="80" height="80" loading="lazy" alt="instagram post"
+                  class="img-cover">
+              </li>
+
+              <li>
+                <img src="./assets/images/ins-6.png" width="80" height="80" loading="lazy" alt="instagram post"
+                  class="img-cover">
+              </li>
+
+            </ul>
+
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          © Copyright 2025 | All Rights Reserved by Sterling-Academy
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+      
+
+  <!-- 
+   - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="Google-Sheet.js"></script>
+ 
+</body>
+
+</html>
