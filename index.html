@@ -34,6 +34,37 @@
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
   <link rel="preload" as="image" href="./assets/images/hero-bg.png">
 
+    <style>
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #555;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.back-to-top:hover {
+    background-color: #333;
+}
+  </style>
+
 </head>
 
 <body>
@@ -684,8 +715,6 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="Google-Sheet.js"></script>
- 
 
   <!-- Popup Form -->
 <!-- <div id="popupForm" class="popup-container">
@@ -794,6 +823,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script> -->
+<button class="back-to-top" title="Go to top">↑</button>
+
 
 </body>
 
